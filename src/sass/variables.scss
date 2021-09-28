@@ -1,3 +1,20 @@
-h1 {
-  color: yellow;
+$colors: (
+  primary: #eaeaf2,
+  secondary: #04041a,
+  highlight: #eb188a,
+);
+
+@mixin container_mixin(
+  $border-radius,
+  $border-color,
+  $padding,
+  $margin-bottom,
+  $color,
+  $background-color
+) {
+  border: $border-radius solid $border-color;
+  padding: $padding;
+  margin-bottom: $margin-bottom;
+  color: $color;
+  background-color: $background-color;
 }
